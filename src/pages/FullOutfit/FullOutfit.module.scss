@@ -1,0 +1,151 @@
+.wrapper {
+  display: flex;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.images {
+  display: flex;
+  gap: 40px;
+}
+
+.minImages {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content {
+  width: 400px;
+  padding-left: 100px;
+
+  @media (max-width: 800px) {
+    padding-left: 0;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1D1F22;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1D1F22;
+  margin-bottom: clamp(1.563rem, 1.153rem + 2.05vw, 2.688rem);
+}
+
+.options__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1D1F22;
+  margin-bottom: 8px;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.size {
+  width: 63px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #1D1F22;
+  cursor: pointer;
+}
+
+.sizeActive {
+  color: #fff;
+  background-color: #1D1F22;;
+}
+
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 35px;
+}
+
+.color {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+}
+
+.color1 {
+  background-color: #D3D2D5;
+}
+.color2 {
+  background-color: #2B2B2B;
+}
+.color3 {
+  background-color: #0F6450;
+}
+
+.colorActive {
+  &::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid red;
+    position: absolute;
+    top: -1.5px;
+    left: -1.5px;
+    z-index: -1;
+  }
+}
+
+.cost {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #1D1F22;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #5ECE7B;
+  color: #fff;
+  width: 100%;
+  height: clamp(2.188rem, 1.801rem + 1.93vw, 3.25rem);
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 159.96%;
+  color: #1D1F22;
+}
