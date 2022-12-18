@@ -5,8 +5,8 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Home from './pages/Home';
 import FullOutfit from './pages/FullOutfit/FullOutfit';
-import Cart from './pages/Cart';
-import NotFound from './pages/NotFound';
+import Cart from './pages/Cart/Cart';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
