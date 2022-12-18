@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  gap: 15px;
+}
+
+li {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #1D1F22;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: 600;
+  position: relative;
+  color: #5ECE7B;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 100%;
+    background-color: #5ECE7B;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
