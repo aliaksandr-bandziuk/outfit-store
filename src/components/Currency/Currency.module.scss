@@ -1,3 +1,7 @@
+.sort {
+  position: relative;
+}
+
 .currency {
   display: flex;
   align-items: center;
@@ -10,4 +14,33 @@
   font-size: 18px;
   line-height: 160%;
   color: #1D1F22;
+}
+
+.currencyPopup {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 115px;
+}
+
+.list {
+  overflow: hidden;
+  li {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 160%;
+    color: #1D1F22;
+
+    &.active,
+    &:hover {
+      background: #EEEEEE;
+      font-weight: 500;
+    }
+
+    &.active {
+      font-weight: bold;
+      color: #EEEEEE;
+    }
+  }
 }
