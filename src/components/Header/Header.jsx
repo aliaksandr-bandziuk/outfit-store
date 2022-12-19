@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 
@@ -25,14 +26,18 @@ const Header = () => {
               <li>Kids</li>
             </ul>
           </nav>
-          <div className="logo-block">
-            <img src={logo} alt="logo"/>
-          </div>
+          <Link to="/">
+            <div className="logo-block">
+              <img src={logo} alt="logo"/>
+            </div>
+          </Link>
           <div className={styles.data}>
             <Currency/>
-            <div className="cart-header">
-              <img src={cart} alt="" />
-            </div>
+            <Link to="/cart">
+              <div className="cart-header">
+                <img src={cart} alt="" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
